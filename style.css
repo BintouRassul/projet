@@ -1,0 +1,288 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    width: 145px;
+
+}
+
+body{ 
+       font-family: 'Kanit', sans-serif;
+
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #0e0606;
+}
+nav ul li{
+    background-color: #f74cb0;
+    color: #fff;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 9px;
+    text-align: center;
+        padding: 10px;
+        position: transform 0-4s;
+}
+nav ul li a{
+    margin-right: 10px;
+}
+li a:hover{
+    background: #f3b1cf;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 9px;
+    text-align: center;
+        padding: 5px;
+        transform: translateY(-5px);
+
+}
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px; 
+    padding-right: 25px;  
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    padding: 50px;
+    min-width: 300px;
+}
+.col-2 img{
+    width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #f74cb0;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: background 0.5s;
+}
+.col-2 a:hover{
+    background: #2a1d24;
+}
+p{
+    color: #555;
+}
+.header-section
+{
+    margin-top: 20px;
+    background: radial-gradient(#fff, #faf2fb);
+}
+/* style de la section categories */
+.col-3
+{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+.col-3 img{
+    width: 100%;
+}
+.container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #444;
+    margin: 50px 0;
+}
+/* section des meilleus produits */
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0-4s;
+    text-align: center;
+}
+.col-4 img{
+    width: 80%;
+}
+h2{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.rating .fa{
+    color: #f74cb0;
+}
+h2 a {
+    background: #f74cb0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 50px;
+}
+/* Formilaire */
+.contact
+{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+    padding: 40px;
+    background:#f74cb0
+ 
+}
+
+.form {
+    position: relative;
+    width:600px;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0),rgba(0,0,0));
+    flex-direction: column;
+    border-radius: 20px;
+
+}
+.form h2{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    color: #16110c;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+input {
+    width: 500px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-size: 15px;
+    color: #f3eded;
+
+}
+::placeholder{
+    color: #fff;
+}
+input[type="submit"]
+{
+    display: inline-block;
+    background: #f74cb0;
+    color: #fff;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    color: #555;
+    background: #faf2fb;
+}
+@media screen and (max-width: 981px) {
+    .contact{
+        
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    width: 80%;
+    }
+    
+}
+@media screen and (max-width: 758px) {
+    .contact{
+        
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    }
+    
+}
+ @media screen and (max-width: 500px) {
+    .form {
+        width: 300px;
+        margin-left: 10%;
+        
+    }
+    input {
+        width: 240px;
+       
+    
+    }
+    .form h2{
+        width: 200px;
+       
+    }
+    input[type="submit"]
+    {
+        width: 150px;
+    }
+
+} 
+.button{
+    font-weight: bolder;
+    padding: 0.625rem;
+    border-radius: 4px;
+    transition: all; 
+    text-align: center; 
+}
+
+button a{
+    background: #db2781;
+    color: #fff;
+    
+    border-radius: 1px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 30px;
+    height: 20px; 
+
+}
+
+
+
+
+
+
+
